@@ -30,7 +30,7 @@ const reducer = (state, action) => {
   }
 }
 
-const store = createStore();
+const store = createStore(reducer);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
