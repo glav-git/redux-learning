@@ -14,7 +14,7 @@ const defaultState = {
 // type - required "string" that define "what shoudl i do
 // and params are optional data that we can pass in reducer to compleet action
 // action = {type: "", payload: "?"}
-const reducer = (state, action) => {
+const reducer = (state = defaultState, action) => {
   switch (action.type) {
     case "ADD_CASH":
       // state by default unmutable, so wee ned to unpak state and then
